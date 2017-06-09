@@ -88,10 +88,10 @@
 			<artifactId>bugsnag</artifactId>
 			<version>${bugsnag.version}</version>
 		</dependency>
-		<!-- service-core -->
+		<!-- tinderboxhq-core -->
 		<dependency>
-			<groupId>service-core</groupId>
-			<artifactId>service-core</artifactId>
+			<groupId>tinderboxhq-core</groupId>
+			<artifactId>tinderboxhq-core</artifactId>
 			<version>${project.version}</version>
 		</dependency>
 	</dependencies>

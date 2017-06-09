@@ -72,6 +72,8 @@
 		<exclude name="ShortVariable" />
 		<exclude name="AvoidFieldNameMatchingTypeName" />
 		<exclude name="AbstractNaming" />
+		<exclude name="VariableNamingConventions" />
+		<exclude name="MethodNamingConventions"/>
 	</rule>
 	<rule ref="rulesets/java/naming.xml/LongVariable">
 		<properties>

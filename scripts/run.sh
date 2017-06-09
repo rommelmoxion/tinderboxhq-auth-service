@@ -6,10 +6,10 @@ case "$1" in
 		java -XX:MetaspaceSize=128m -XX:MaxMetaspaceSize=512m -XX:+UseConcMarkSweepGC -Xms1024m -Xmx1024m -XX:-UseGCOverheadLimit -Xss512k -XX:NewRatio=3 -jar target/tinderboxhq-auth-service.jar > server.log &
 		;;
 		stop)
-		pkill -f tinderboxhq-auth-service.jar"
+		pkill -f tinderboxhq-auth-service.jar
 		;;
 		log)
-		tail -f tinderboxhq-auth-service.log
+		tail -f server.log
 		;;
 		*)
 		echo "Usage: {start|stop|log}"

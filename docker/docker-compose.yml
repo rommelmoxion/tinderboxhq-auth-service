@@ -1,0 +1,18 @@
+version: '2'
+services:
+  asset:
+     build: .
+     hostname: user-auth-service
+     container_name: user-auth-service
+     image: tinderboxhq/user-auth-service
+     restart: always
+     networks:
+       - public
+     ports:
+       - "7000:7000"
+     volumes:
+       - ./tinderboxhq:/service/
+
+networks:
+  public:
+    driver: bridge
